@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+
+price-monitor:
+  api-uri: http://localhost:8888/api/v1/prices/{cryptoUnit}-USD/market-price
+
+currency-monitor:
+  api-uri: http://localhost:9999/api/v1/currencies/{currency}
