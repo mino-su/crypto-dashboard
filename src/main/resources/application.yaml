@@ -3,7 +3,7 @@ server:
 
 
 price-monitor:
-  api-uri: http://localhost:8888/api/v1/prices/{cryptoUnit}-USD/market-price
+  api-uri: http://${PRICE_MONITOR_HOST:localhost}:8888/api/v1/prices/{cryptoUnit}-USD/market-price
 
 currency-monitor:
-  api-uri: http://localhost:9999/api/v1/currencies/{currency}
+  api-uri: http://${CURRENCY_MONITOR_HOST:localhost}:9999/api/v1/currencies/{currency}
